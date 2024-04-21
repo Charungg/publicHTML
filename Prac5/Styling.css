@@ -1,0 +1,100 @@
+#headerArea {grid-area: header;}
+#menuArea {grid-area: menu;}
+#mainArea {grid-area: main;}
+
+/* Page Templete */
+#gridContainer{
+    display: grid;
+    grid-template-areas: 
+    "header header header header header header"
+    "menu main main main main main"
+    "menu main main main main main";
+
+    grid-template-columns: 250px auto;
+    grid-template-rows: 200px auto;
+    background-color: rgb(250,227,249);
+}
+
+#gridContainer div{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+
+/* Header */
+#gridContainer #headerArea{
+    background-image: url("DogBanner.jpg");
+    border-style:solid;
+}
+
+#gridContainer #headerArea h1{
+    padding-top: 50px;
+    color: rgb(255, 255, 255);
+    padding-left: 3%;
+    text-align: left;
+}
+
+
+/* Menu */
+#gridContainer #menuArea{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2362ff;
+    background-color: rgba(97, 156, 245, 0.733);
+    line-height: 200%;
+    border-style:solid;
+}
+
+#gridContainer #menuArea a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Main */
+#gridContainer #mainArea{
+    padding-left: 3%;
+    padding-right: 3%;
+    border-style:solid;
+    padding-bottom: 20%;
+}
+
+
+/* Background of Colour */
+body{
+    background-color: rgb(253,210,210);
+}
+
+
+/* Media Queries */
+/* For Mobile*/
+@media only screen and (max-width: 500px){
+    #gridContainer{
+        grid-template-areas: 
+        "header"
+        "menu"
+        "main";
+        grid-template-columns:auto;
+        grid-template-rows:25% auto;
+    }
+
+    #gridContainer #menuArea .menuLinks{
+        padding-left: 5%;
+        text-align: left;
+    
+    }
+
+
+    #gridContainer #headerArea h1{
+        text-align: center;
+        color: rgb(255, 255, 255);
+
+        font-size: 18px;
+        line-height:40px;
+    }
+}
+
+
+/* For Tablets */
+@media only screen and (min-width:500px) and (max-width: 800px){    
+
+    
+}
