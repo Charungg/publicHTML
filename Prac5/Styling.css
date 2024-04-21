@@ -54,9 +54,14 @@
     padding-left: 3%;
     padding-right: 3%;
     border-style:solid;
-    padding-bottom: 20%;
+    padding-bottom: 5%;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+    float: right;
+}
 
 /* Background of Colour */
 body{
@@ -73,7 +78,7 @@ body{
         "menu"
         "main";
         grid-template-columns:auto;
-        grid-template-rows:25% auto;
+        grid-template-rows:12% auto;
     }
 
     #gridContainer #menuArea .menuLinks{
